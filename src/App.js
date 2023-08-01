@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+//1- Fazer os Objetos
+//2- Pegar as imagens
+//3- Mapear
+//4- Fazer cada a página de cada carro
+import React from "react";
+import { cars } from "./script";
+import Home from "./pages/home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  return(
+    <>
+    <Home/>
+    </>
+  )
 }
-
-export default App;
